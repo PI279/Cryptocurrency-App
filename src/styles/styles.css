@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+:root {
+    --body_background: white;
+    --body_color: black;
+    --block_background: rgba(245, 248, 255, 1);
+    --purple_color: rgba(105, 47, 255, 1);
+    --pink_color: rgba(193, 70, 254, 1);
+    --yellow_color: rgba(255, 200, 70, 1);
+    --chian_color: rgba(86, 215, 255, 1);
+    --blue_color: rgba(13, 208, 231, 1);
+    --red_color: rgba(169, 43, 43, 1);
+    --component_bg: 
+
+    --block_color: white;
+    --text_color: black;
+    --v1_component_color: rgba(221, 160, 221, 1);
+    --v2_component_color: rgba(221, 160, 221, 1);
+    
+    --v3_component_color: rgba(163, 206, 242, 1);
+    --v4_component_color:  rgba(99, 188, 229, 1);
+}
+[data-theme="dark"] {
+    --body_background: black;
+    --body_color: white;
+    --block_background: rgba(20, 33, 42, 1);
+    --purple_color: rgba(121, 69, 255, 1);
+    --pink_color: rgba(209, 115, 255, 1);
+    --yellow_color: rgba(255, 214, 117, 1);
+    --chian_color: rgba(134, 224, 252, 1);
+    --blue_color: rgba(15, 217, 241, 1);
+    --red_color: rgba(197, 60, 60, 1);
+
+    --block_color:black ;
+    --text_color: white;
+    --v1_component_color: rgba(158, 21, 191, 1);
+    --v2_component_color: rgba(99, 188, 229, 1);
+    --v3_component_color:  rgba(74, 198, 210, 1);
+    --v4_component_color: rgba(40, 85, 154, 1) ;
+    --Component: 
+}
+.list{
+    background-color: var(--v1_component_color);
+}
+.sticky{
+    position: sticky;
+    top: 0;
+
+}
+font{
+    font-family: 'font-family: "Audiowide", sans-serif';
+}
+.hComponent{
+    background: none;
+    border-width: 1px;
+    border-color: var(--text_color);
+    color: var(--text_color);
+}
+.v4{
+    background-color: var(--v4_component_color);
+}
+.CryptoBlock{
+    background-color: var(--v3_component_color);
+}
+.button{
+    color: var( --text_color);
+    background-color: var( --v3_component_color);
+}
+.bg{
+    background-color: var(--body_background);
+    color: var(--body_color);
+}
+.bgBlock{
+    background-color: var(--block_background);
+    color: var(--body_color);
+}
+.bgMenu{
+    background-color: var(--body_background);
+    color: var(--body_color);
+}
+.bgPurple{
+    background-color: var( --purple_color);
+}
+.bgPink{
+    background-color: var(--pink_color);
+}
+.bgYellow{
+    background-color: var(--yellow_color);
+}
+.bgChian{
+    background-color: var(--chian_color);
+}
+.bgRed{
+    background-color: var(--red_color);
+}
+
+.ani{
+    animation: ani 2.5s forwards;
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+.maxWidth{
+    width: 100vw;
+}
+.m10{
+    margin: 10px;
+}
+.m15{
+    margin-top: 15px;
+}
+.p10{
+    padding: 10px;
+}
+.p15{
+    padding: 10px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.cryptoName{
+    margin: 15px;
+    text-align: start;
+}
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr {
+    margin: 10px 0;
+    height: 2px;
+    background: var(--v3_component_color);
+    position: relative;
+    overflow: hidden;
+    border: none;
+}        
+hr:after {
+    content: "";
+    height: 2px;
+    background: var(--v1_component_color);
+    position: absolute;
+    width: 30%;
+    border-radius: 5px;
+    top: 0;
+    animation: anim-hr 5s linear infinite;  
+}
+@keyframes anim-hr {
+    0% {
+        left: -20%;
+    } 
+    100% {
+        left: 100%;
+    }
+}
+  
